@@ -1,0 +1,124 @@
+{
+	"userAgent": "azsdk-java-cosmos/4.12.0 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-WestUS",
+	"requestLatencyInMs": 2810,
+	"requestStartTimeUTC": "01 Oct 2021 00:20:25.783",
+	"requestEndTimeUTC": "01 Oct 2021 00:20:28.593",
+	"responseStatisticsList": [
+		{
+			"storeResult": {
+				"storePhysicalAddress": null,
+				"lsn": -1,
+				"globalCommittedLsn": -1,
+				"partitionKeyRangeId": null,
+				"isValid": false,
+				"statusCode": 410,
+				"subStatusCode": 0,
+				"isGone": true,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"requestCharge": 0.0,
+				"itemLSN": -1,
+				"sessionToken": null,
+				"exception": "failed to establish connection to saj-diagnostics-test-westus.documents.azure.com:23603 Connection timed out: saj-diagnostics-test-westus.documents.azure.com/10.28.191.84:23603",
+				"transportRequestTimeline": null
+			},
+			"requestResponseTimeUTC": "01 Oct 2021 00:20:28.589",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		},
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus.documents.azure.com:23313/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132430515041085643s/",
+				"lsn": 228284951,
+				"globalCommittedLsn": 210003990,
+				"partitionKeyRangeId": "305",
+				"isValid": true,
+				"statusCode": 200,
+				"subStatusCode": 0,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"requestCharge": 1.14,
+				"itemLSN": 228242731,
+				"sessionToken": "23#210003991#2=85520735#7=228284944",
+				"exception": null,
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"durationInMicroSec": "0",
+						"startTime": "2021-10-01T00:20:28.589Z"
+					},
+					{
+						"eventName": "queued",
+						"durationInMicroSec": "1000",
+						"startTime": "2021-10-01T00:20:28.589Z"
+					},
+					{
+						"eventName": "pipelined",
+						"durationInMicroSec": "0",
+						"startTime": "2021-10-01T00:20:28.590Z"
+					},
+					{
+						"eventName": "transitTime",
+						"durationInMicroSec": "3000",
+						"startTime": "2021-10-01T00:20:28.590Z"
+					},
+					{
+						"eventName": "received",
+						"durationInMicroSec": "0",
+						"startTime": "2021-10-01T00:20:28.593Z"
+					},
+					{
+						"eventName": "completed",
+						"durationInMicroSec": "0",
+						"startTime": "2021-10-01T00:20:28.593Z"
+					}
+				]
+			},
+			"requestResponseTimeUTC": "01 Oct 2021 00:20:28.593",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		}
+	],
+	"supplementalResponseStatisticsList": [],
+	"addressResolutionStatistics": {
+		"2fe5aafb-2f7d-11eb-8dbf-b7ddccc0b370": {
+			"startTimeUTC": "01 Oct 2021 00:20:28.593",
+			"endTimeUTC": null,
+			"targetEndpoint": "https://saj-diagnostics-test-westus.documents.azure.com:443/addresses/?$resolveFor=dbs%2FFPVSAA%3D%3D%2Fcolls%2FFPVSAIN64kw%3D%2Fdocs&$filter=protocol%20eq%20rntbd&$partitionKeyRangeIds=305",
+			"errorMessage": null,
+			"inflightRequest": true
+		}
+	},
+	"regionsContacted": [
+		"https://saj-diagnostics-test-westus.documents.azure.com:443/"
+	],
+	"retryContext": {
+		"retryCount": 0,
+		"statusAndSubStatusCodes": null,
+		"retryLatency": 0
+	},
+	"metadataDiagnosticsContext": {
+		"metadataDiagnosticList": null
+	},
+	"serializationDiagnosticsContext": {
+		"serializationDiagnosticsList": null
+	},
+	"gatewayStatistics": null,
+	"systemInformation": {
+		"usedMemory": "1273798 KB",
+		"availableMemory": "2789434 KB",
+		"systemCpuLoad": "(2021-10-01T00:20:02.562Z 9.9%), (2021-10-01T00:20:07.562Z 10.8%), (2021-10-01T00:20:12.562Z 9.4%), (2021-10-01T00:20:17.562Z 10.8%), (2021-10-01T00:20:22.562Z 10.1%), (2021-10-01T00:20:27.562Z 10.9%)"
+	},
+	"clientCfgs": {
+		"id": 0,
+		"connectionMode": "DIRECT",
+		"numberOfClients": 3,
+		"connCfg": {
+			"rntbd": "(cto:PT0.6S, rto:PT5S, icto:PT0S, ieto:PT25H, mcpe:350, mrpc:30, cer:true)",
+			"gw": "(cps:1150, rto:PT5S, icto:PT1M, p:false)",
+			"other": "(ed: false, cs: false)"
+		},
+		"consistencyCfg": "(consistency: Eventual, mm: false, prgns: [])"
+	}
+}

@@ -1,0 +1,127 @@
+{
+  "userAgent": "azsdk-java-cosmos/4.12.0 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-EastUS2",
+  "requestLatencyInMs": 1007,
+  "requestStartTimeUTC": "01 Oct 2021 21:29:57.668",
+  "requestEndTimeUTC": "01 Oct 2021 21:29:58.675",
+  "responseStatisticsList": [
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-diagnostics-test-eastus2.documents.azure.com:7390/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132441486021353682p/",
+        "lsn": 177454649,
+        "globalCommittedLsn": 177454648,
+        "partitionKeyRangeId": "311",
+        "isValid": true,
+        "statusCode": 449,
+        "subStatusCode": 0,
+        "isGone": false,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "requestCharge": 1.57,
+        "itemLSN": -1,
+        "sessionToken": "23#177454649#2=42226791#7=185242206",
+        "exception": "[\"Conflicting request to resource has been attempted. Retry to avoid conflicts.\"]",
+        "transportRequestTimeline": null
+      },
+      "requestResponseTimeUTC": "01 Oct 2021 21:29:57.670",
+      "requestResourceType": "Document",
+      "requestOperationType": "Replace"
+    },
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-diagnostics-test-eastus2.documents.azure.com:7390/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132441486021353682p/",
+        "lsn": 177454649,
+        "globalCommittedLsn": 177454648,
+        "partitionKeyRangeId": "311",
+        "isValid": true,
+        "statusCode": 449,
+        "subStatusCode": 0,
+        "isGone": false,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "requestCharge": 1.57,
+        "itemLSN": -1,
+        "sessionToken": "23#177454649#2=42226791#7=185242206",
+        "exception": "[\"Conflicting request to resource has been attempted. Retry to avoid conflicts.\"]",
+        "transportRequestTimeline": null
+      },
+      "requestResponseTimeUTC": "01 Oct 2021 21:29:57.673",
+      "requestResourceType": "Document",
+      "requestOperationType": "Replace"
+    },
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-diagnostics-test-eastus2.documents.azure.com:7390/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132441486021353682p/",
+        "lsn": 177454652,
+        "globalCommittedLsn": 177454651,
+        "partitionKeyRangeId": "311",
+        "isValid": true,
+        "statusCode": 412,
+        "subStatusCode": 0,
+        "isGone": false,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "requestCharge": 1.57,
+        "itemLSN": -1,
+        "sessionToken": "23#177454652#2=42226797#7=185242206",
+        "exception": "[\"One of the specified pre-condition is not met\"]",
+        "transportRequestTimeline": null
+      },
+      "requestResponseTimeUTC": "01 Oct 2021 21:29:58.675",
+      "requestResourceType": "Document",
+      "requestOperationType": "Replace"
+    }
+  ],
+  "supplementalResponseStatisticsList": [],
+  "addressResolutionStatistics": {},
+  "regionsContacted": [
+    "https://saj-diagnostics-test-eastus2.documents.azure.com:443/"
+  ],
+  "retryContext": {
+    "retryCount": 2,
+    "statusAndSubStatusCodes": [
+      [
+        449,
+        0
+      ],
+      [
+        449,
+        0
+      ],
+      [
+        412,
+        0
+      ]
+    ],
+    "retryLatency": 1005
+  },
+  "metadataDiagnosticsContext": {
+    "metadataDiagnosticList": null
+  },
+  "serializationDiagnosticsContext": {
+    "serializationDiagnosticsList": [
+      {
+        "serializationType": "ITEM_SERIALIZATION",
+        "startTimeUTC": "01 Oct 2021 21:29:57.668",
+        "endTimeUTC": "01 Oct 2021 21:29:57.668",
+        "durationInMicroSec": 0
+      }
+    ]
+  },
+  "gatewayStatistics": null,
+  "systemInformation": {
+    "usedMemory": "3114437 KB",
+    "availableMemory": "948795 KB",
+    "systemCpuLoad": "(2021-10-01T21:29:32.827Z 10.0%), (2021-10-01T21:29:37.827Z 9.1%), (2021-10-01T21:29:42.827Z 10.6%), (2021-10-01T21:29:47.827Z 9.3%), (2021-10-01T21:29:52.827Z 10.2%), (2021-10-01T21:29:57.827Z 10.8%)"
+  },
+  "clientCfgs": {
+    "id": 0,
+    "connectionMode": "DIRECT",
+    "numberOfClients": 1,
+    "connCfg": {
+      "rntbd": "(cto:PT0.6S, rto:PT5S, icto:PT0S, ieto:PT25H, mcpe:350, mrpc:30, cer:true)",
+      "gw": "(cps:1150, rto:PT5S, icto:PT1M, p:false)",
+      "other": "(ed: false, cs: false)"
+    },
+    "consistencyCfg": "(consistency: Eventual, mm: false, prgns: [])"
+  }
+}

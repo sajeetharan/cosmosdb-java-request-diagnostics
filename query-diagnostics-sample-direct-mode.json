@@ -1,0 +1,311 @@
+userAgent=azsdk-java-cosmos/4.19.0-beta.1 MacOSX/10.16 JRE/11.0.6
+QueryPlan Start Time (UTC)=20: 13: 24: 8479
+QueryPlan End Time (UTC)=20: 13: 25: 1430
+QueryPlan Duration (ms)=295
+QueryPlan RequestTimeline =[
+  {
+    "eventName": "connectionCreated",
+    "startTimeUTC": "2021-09-01T20:13:24.881766Z",
+    "durationInMicroSec": 190259
+  },
+  {
+    "eventName": "connectionConfigured",
+    "startTimeUTC": "2021-09-01T20:13:25.072025Z",
+    "durationInMicroSec": 86
+  },
+  {
+    "eventName": "requestSent",
+    "startTimeUTC": "2021-09-01T20:13:25.072111Z",
+    "durationInMicroSec": 1123
+  },
+  {
+    "eventName": "transitTime",
+    "startTimeUTC": "2021-09-01T20:13:25.073234Z",
+    "durationInMicroSec": 63010
+  },
+  {
+    "eventName": "received",
+    "startTimeUTC": "2021-09-01T20:13:25.136244Z",
+    "durationInMicroSec": 598
+  }
+]
+
+{
+  "min": "05C1DFFFFFFFFC",
+  "max": "FF"
+},pkrId: 2=Retrieved Document Count                 : 7              
+Retrieved Document Size                  : 2648 bytes        
+Output Document Count                    : 7              
+Output Document Size                     : 3197 bytes        
+Index Utilization                        : 100.00 %            
+Total Query Execution Time               : 0.860000 milliseconds 
+Query Preparation Times 
+    Query Compilation Time               : 0.160000 milliseconds 
+    Logical Plan Build Time              : 0.040000 milliseconds 
+    Physical Plan Build Time             : 0.240000 milliseconds 
+    Query Optimization Time              : 0.000000 milliseconds 
+  Index Lookup Time                      : 0.100000 milliseconds 
+  Document Load Time                     : 0.050000 milliseconds 
+Runtime Execution Times 
+    Query Engine Times                   : 0.060000 milliseconds 
+    System Function Execution Time       : 0.000000 milliseconds 
+    User-defined Function Execution Time : 0.000000 milliseconds 
+  Document Write Time                    : 0.010000 milliseconds 
+Client Side Metrics 
+  Retry Count                            : 0              
+  Request Charge                         : 3.04 RUs          
+ 
+Partition Execution Timeline 
+┌───────────────────┬────────────────────────────────────┬────────────────┬────────────────┬─────────────┬───────────────────┬───────────┐ 
+│Partition Key Range│                         Activity Id│Start Time (UTC)│  End Time (UTC)│Duration (ms)│NUMBER of Documents│Retry Count│ 
+├───────────────────┼────────────────────────────────────┼────────────────┼────────────────┼─────────────┼───────────────────┼───────────┤ 
+│{
+  "min": "05C1DFFFFFFFFC",
+  "max": "FF"
+}│103d9ff9-0b61-11ec-9a99-b99e53e6ae68│   20: 13: 25: 3861│   20: 13: 26: 2501│        864.0│                  7│          0│ 
+└───────────────────┴────────────────────────────────────┴────────────────┴────────────────┴─────────────┴───────────────────┴───────────┘ 
+ 
+Scheduling Metrics 
+┌───────────────┬──────────────────┬─────────────┬──────────────┬────────────────────┬─────────────────────┐ 
+│Partition Range│Response Time (ms)│Run Time (ms)│Wait Time (ms)│Turnaround Time (ms)│NUMBER of Preemptions│ 
+├───────────────┼──────────────────┼─────────────┼──────────────┼────────────────────┼─────────────────────┤ 
+│{
+  "min": "05C1DFFFFFFFFC",
+  "max": "FF"
+}│                86│          865│            88│                 953│                    1│ 
+└───────────────┴──────────────────┴─────────────┴──────────────┴────────────────────┴─────────────────────┘ 
+Index Utilization Info Metrics 
+ 
+ Utilized Single Indexes Metrics 
+┌─────────────────┬─────────────────────────┬───────────────────────────┬────────────────────────┬──────────────────┐ 
+│Filter Expression│Index Document Expression│Filter Expression Precision│Index Plan Full Fidelity│Index Impact Score│ 
+├─────────────────┼─────────────────────────┼───────────────────────────┼────────────────────────┼──────────────────┤ 
+│             TRUE│              /someProp/?│                       true│                    true│              High│ 
+└─────────────────┴─────────────────────────┴───────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Potential Single Indexes Metrics 
+┌─────────────────┬─────────────────────────┬───────────────────────────┬────────────────────────┬──────────────────┐ 
+│Filter Expression│Index Document Expression│Filter Expression Precision│Index Plan Full Fidelity│Index Impact Score│ 
+├─────────────────┼─────────────────────────┼───────────────────────────┼────────────────────────┼──────────────────┤ 
+└─────────────────┴─────────────────────────┴───────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Utilized Composite Indexes Metrics 
+┌──────────────────────────┬────────────────────────┬──────────────────┐ 
+│Index Document Expressions│Index Plan Full Fidelity│Index Impact Score│ 
+├──────────────────────────┼────────────────────────┼──────────────────┤ 
+└──────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Potential Composite Indexes Metrics 
+┌──────────────────────────┬────────────────────────┬──────────────────┐ 
+│Index Document Expressions│Index Plan Full Fidelity│Index Impact Score│ 
+├──────────────────────────┼────────────────────────┼──────────────────┤ 
+└──────────────────────────┴────────────────────────┴──────────────────┘ 
+
+{
+  "min": "",
+  "max": "05C1DFFFFFFFFC"
+},pkrId: 1=Retrieved Document Count                 : 11              
+Retrieved Document Size                  : 4245 bytes        
+Output Document Count                    : 11              
+Output Document Size                     : 5062 bytes        
+Index Utilization                        : 100.00 %            
+Total Query Execution Time               : 0.910000 milliseconds 
+Query Preparation Times 
+    Query Compilation Time               : 0.170000 milliseconds 
+    Logical Plan Build Time              : 0.050000 milliseconds 
+    Physical Plan Build Time             : 0.190000 milliseconds 
+    Query Optimization Time              : 0.000000 milliseconds 
+  Index Lookup Time                      : 0.080000 milliseconds 
+  Document Load Time                     : 0.110000 milliseconds 
+Runtime Execution Times 
+    Query Engine Times                   : 0.090000 milliseconds 
+    System Function Execution Time       : 0.000000 milliseconds 
+    User-defined Function Execution Time : 0.000000 milliseconds 
+  Document Write Time                    : 0.010000 milliseconds 
+Client Side Metrics 
+  Retry Count                            : 0              
+  Request Charge                         : 3.19 RUs          
+ 
+Partition Execution Timeline 
+┌───────────────────┬────────────────────────────────────┬────────────────┬────────────────┬─────────────┬───────────────────┬───────────┐ 
+│Partition Key Range│                         Activity Id│Start Time (UTC)│  End Time (UTC)│Duration (ms)│NUMBER of Documents│Retry Count│ 
+├───────────────────┼────────────────────────────────────┼────────────────┼────────────────┼─────────────┼───────────────────┼───────────┤ 
+│{
+  "min": "",
+  "max": "05C1DFFFFFFFFC"
+}│1033dbf7-0b61-11ec-9a99-b99e53e6ae68│   20: 13: 25: 3213│   20: 13: 26: 2503│        929.0│                 11│          0│ 
+└───────────────────┴────────────────────────────────────┴────────────────┴────────────────┴─────────────┴───────────────────┴───────────┘ 
+ 
+Scheduling Metrics 
+┌───────────────┬──────────────────┬─────────────┬──────────────┬────────────────────┬─────────────────────┐ 
+│Partition Range│Response Time (ms)│Run Time (ms)│Wait Time (ms)│Turnaround Time (ms)│NUMBER of Preemptions│ 
+├───────────────┼──────────────────┼─────────────┼──────────────┼────────────────────┼─────────────────────┤ 
+│{
+  "min": "",
+  "max": "05C1DFFFFFFFFC"
+}│                23│          929│            26│                 955│                    1│ 
+└───────────────┴──────────────────┴─────────────┴──────────────┴────────────────────┴─────────────────────┘ 
+Index Utilization Info Metrics 
+ 
+ Utilized Single Indexes Metrics 
+┌─────────────────┬─────────────────────────┬───────────────────────────┬────────────────────────┬──────────────────┐ 
+│Filter Expression│Index Document Expression│Filter Expression Precision│Index Plan Full Fidelity│Index Impact Score│ 
+├─────────────────┼─────────────────────────┼───────────────────────────┼────────────────────────┼──────────────────┤ 
+│             TRUE│              /someProp/?│                       true│                    true│              High│ 
+└─────────────────┴─────────────────────────┴───────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Potential Single Indexes Metrics 
+┌─────────────────┬─────────────────────────┬───────────────────────────┬────────────────────────┬──────────────────┐ 
+│Filter Expression│Index Document Expression│Filter Expression Precision│Index Plan Full Fidelity│Index Impact Score│ 
+├─────────────────┼─────────────────────────┼───────────────────────────┼────────────────────────┼──────────────────┤ 
+└─────────────────┴─────────────────────────┴───────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Utilized Composite Indexes Metrics 
+┌──────────────────────────┬────────────────────────┬──────────────────┐ 
+│Index Document Expressions│Index Plan Full Fidelity│Index Impact Score│ 
+├──────────────────────────┼────────────────────────┼──────────────────┤ 
+└──────────────────────────┴────────────────────────┴──────────────────┘ 
+ 
+Potential Composite Indexes Metrics 
+┌──────────────────────────┬────────────────────────┬──────────────────┐ 
+│Index Document Expressions│Index Plan Full Fidelity│Index Impact Score│ 
+├──────────────────────────┼────────────────────────┼──────────────────┤ 
+└──────────────────────────┴────────────────────────┴──────────────────┘ 
+
+[
+  {
+    "userAgent": "azsdk-java-cosmos/4.19.0-beta.1 MacOSX/10.16 JRE/11.0.6",
+    "requestLatencyInMs": 851,
+    "requestStartTimeUTC": "2021-09-01T20:13:25.386210Z",
+    "requestEndTimeUTC": "2021-09-01T20:13:26.237950Z",
+    "responseStatisticsList": [
+      {
+        "storeResult": {
+          "storePhysicalAddress": "rntbd://saj-diagnostics-test-westus.documents.azure.com:14054/apps/a65de7b2-cbd4-4443-936c-b846428811e9/services/9be0de57-c6e2-4cfa-9fb9-5f9187a9ea12/partitions/a5501cee-667b-4da3-8f72-4e7d5768869a/replicas/132733134457562255s/",
+          "lsn": 107,
+          "globalCommittedLsn": 107,
+          "partitionKeyRangeId": "2",
+          "isValid": true,
+          "statusCode": 200,
+          "subStatusCode": 0,
+          "isGone": false,
+          "isNotFound": false,
+          "isInvalidPartition": false,
+          "isThroughputControlRequestRateTooLarge": false,
+          "requestCharge": 3.04,
+          "itemLSN": -1,
+          "sessionToken": "-1#107",
+          "backendLatencyInMs": 1.284,
+          "exception": null,
+          "transportRequestTimeline": [
+            {
+              "eventName": "created",
+              "startTimeUTC": "2021-09-01T20:13:25.776172Z",
+              "durationInMicroSec": 808
+            },
+            {
+              "eventName": "queued",
+              "startTimeUTC": "2021-09-01T20:13:25.776980Z",
+              "durationInMicroSec": 6
+            },
+            {
+              "eventName": "channelAcquisitionStarted",
+              "startTimeUTC": "2021-09-01T20:13:25.776986Z",
+              "durationInMicroSec": 301776
+            },
+            {
+              "eventName": "pipelined",
+              "startTimeUTC": "2021-09-01T20:13:26.078762Z",
+              "durationInMicroSec": 63074
+            },
+            {
+              "eventName": "transitTime",
+              "startTimeUTC": "2021-09-01T20:13:26.141836Z",
+              "durationInMicroSec": 71028
+            },
+            {
+              "eventName": "received",
+              "startTimeUTC": "2021-09-01T20:13:26.212864Z",
+              "durationInMicroSec": 20046
+            },
+            {
+              "eventName": "completed",
+              "startTimeUTC": "2021-09-01T20:13:26.232910Z",
+              "durationInMicroSec": 24
+            }
+          ],
+          "rntbdRequestLengthInBytes": 540,
+          "rntbdResponseLengthInBytes": 4423,
+          "requestPayloadLengthInBytes": 136,
+          "responsePayloadLengthInBytes": 3197,
+          "channelTaskQueueSize": 0,
+          "pendingRequestsCount": 0,
+          "serviceEndpointStatistics": {
+            "availableChannels": 0,
+            "acquiredChannels": 0,
+            "executorTaskQueueSize": 0,
+            "inflightRequests": 1,
+            "lastSuccessfulRequestTime": "2021-09-01T20:13:25.776Z",
+            "lastRequestTime": "2021-09-01T20:13:25.776Z",
+            "createdTime": "2021-09-01T20:13:25.776297Z",
+            "isClosed": false
+          }
+        },
+        "requestResponseTimeUTC": "2021-09-01T20:13:26.237950Z",
+        "requestResourceType": "Document",
+        "requestOperationType": "Query"
+      }
+    ],
+    "supplementalResponseStatisticsList": [],
+    "addressResolutionStatistics": {
+      "103e152a-0b61-11ec-9a99-b99e53e6ae68": {
+        "startTimeUTC": "2021-09-01T20:13:25.388416Z",
+        "endTimeUTC": "2021-09-01T20:13:25.775068Z",
+        "targetEndpoint": "https://saj-diagnostics-test-canadacentral.documents.azure.com:443/addresses/?$resolveFor=dbs%2F%2BpRVAA%3D%3D%2Fcolls%2F%2BpRVALOgbx4%3D%2Fdocs&$filter=protocol%20eq%20rntbd&$partitionKeyRangeIds=2",
+        "errorMessage": null,
+        "forceRefresh": false,
+        "forceCollectionRoutingMapRefresh": false,
+        "inflightRequest": false
+      }
+    },
+    "regionsContacted": [
+      "https://saj-diagnostics-test-canadacentral.documents.azure.com:443/"
+    ],
+    "retryContext": {
+      "statusAndSubStatusCodes": null,
+      "retryCount": 0,
+      "retryLatency": 0
+    },
+    "metadataDiagnosticsContext": {
+      "metadataDiagnosticList": [
+        {
+          "metaDataName": "SERVER_ADDRESS_LOOKUP",
+          "startTimeUTC": "2021-09-01T20:13:25.388427Z",
+          "endTimeUTC": "2021-09-01T20:13:25.775052Z",
+          "durationinMS": 386
+        }
+      ]
+    },
+    "serializationDiagnosticsContext": {
+      "serializationDiagnosticsList": null
+    },
+    "gatewayStatistics": null,
+    "systemInformation": {
+      "usedMemory": "58760 KB",
+      "availableMemory": "4135544 KB",
+      "systemCpuLoad": "empty",
+      "availableProcessors": 8
+    },
+    "clientCfgs": {
+      "id": 0,
+      "connectionMode": "DIRECT",
+      "numberOfClients": 1,
+      "connCfg": {
+        "rntbd": "(cto:PT5S, rto:PT5S, icto:PT0S, ieto:PT1H, mcpe:130, mrpc:30, cer:false)",
+        "gw": "(cps:1000, rto:PT5S, icto:PT1M, p:false)",
+        "other": "(ed: true, cs: false)"
+      },
+      "consistencyCfg": "(consistency: Session, mm: true, prgns: [])"
+    }
+  }
+]

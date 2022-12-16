@@ -1,0 +1,319 @@
+{
+  "userAgent": "azsdk-java-cosmos/4.34.0 Linux/5.15.0-1019-azure JRE/1.8.0_331",
+  "activityId": "1489cad3-452e-11ed-83f3-ad0772752220",
+  "requestLatencyInMs": 1230,
+  "requestStartTimeUTC": "2022-10-06T04:19:33.374Z",
+  "requestEndTimeUTC": "2022-10-06T04:19:34.604Z",
+  "responseStatisticsList": [
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-test-westus2.documents.azure.com:10950/apps/01a6ca6a-50c5-4317-8a3f-60781c449887/services/8c9e3059-a835-4240-9588-0bced83499ba/partitions/20153b0d-f38e-4ffd-b103-7307a8f0bd10/replicas/132974109168106112s/",
+        "lsn": -1,
+        "globalCommittedLsn": -1,
+        "partitionKeyRangeId": null,
+        "isValid": false,
+        "statusCode": 410,
+        "subStatusCode": 0,
+        "isGone": true,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "isThroughputControlRequestRateTooLarge": false,
+        "requestCharge": 0,
+        "itemLSN": -1,
+        "sessionToken": null,
+        "backendLatencyInMs": null,
+        "exceptionMessage": "failed to establish connection to saj-test-westus2.documents.azure.com:10950 due to io.netty.channel.ConnectTimeoutException: connection timed out: saj-test-westus2.documents.azure.com/obfuscated.ip.address.01:10950",
+        "exceptionResponseHeaders": "{x-ms-activity-id=1489cad3-452e-11ed-83f3-ad0772752220}",
+        "transportRequestTimeline": [
+          {
+            "eventName": "created",
+            "startTimeUTC": "2022-10-06T04:19:33.374Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "queued",
+            "startTimeUTC": "2022-10-06T04:19:33.374Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "channelAcquisitionStarted",
+            "startTimeUTC": "2022-10-06T04:19:33.374Z",
+            "durationInMilliSecs": 600
+          },
+          {
+            "eventName": "pipelined",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "transitTime",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "decodeTime",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "received",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "completed",
+            "startTimeUTC": "2022-10-06T04:19:33.974Z",
+            "durationInMilliSecs": 0
+          }
+        ],
+        "rntbdRequestLengthInBytes": -1,
+        "rntbdResponseLengthInBytes": -1,
+        "requestPayloadLengthInBytes": 259,
+        "responsePayloadLengthInBytes": -1,
+        "channelTaskQueueSize": 0,
+        "pendingRequestsCount": 0,
+        "serviceEndpointStatistics": {
+          "availableChannels": 0,
+          "acquiredChannels": 0,
+          "executorTaskQueueSize": 0,
+          "inflightRequests": 1,
+          "lastSuccessfulRequestTime": "2022-10-06T03:23:58.075Z",
+          "lastRequestTime": "2022-10-06T03:52:28.690Z",
+          "createdTime": "2022-10-06T03:23:58.076Z",
+          "isClosed": false,
+          "cerMetrics": {
+            "lastCallTimestamp": "2022-10-06T04:19:33.974Z",
+            "lastActionableContext": "(2022-10-06T04:19:33.974Z,1)"
+          }
+        }
+      },
+      "requestResponseTimeUTC": "2022-10-06T04:19:33.974Z",
+      "requestResourceType": "Document",
+      "requestOperationType": "Query",
+      "requestSessionToken": "111:5#44143434#2=45097356#7=62713334#8=17610233"
+    },
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-test-westus2.documents.azure.com:10914/apps/01a6ca6a-50c5-4317-8a3f-60781c449887/services/8c9e3059-a835-4240-9588-0bced83499ba/partitions/20153b0d-f38e-4ffd-b103-7307a8f0bd10/replicas/133029579299541886p/",
+        "lsn": -1,
+        "globalCommittedLsn": -1,
+        "partitionKeyRangeId": null,
+        "isValid": false,
+        "statusCode": 410,
+        "subStatusCode": 0,
+        "isGone": true,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "isThroughputControlRequestRateTooLarge": false,
+        "requestCharge": 0,
+        "itemLSN": -1,
+        "sessionToken": null,
+        "backendLatencyInMs": null,
+        "exceptionMessage": "failed to establish connection to saj-test-westus2.documents.azure.com:10914 due to io.netty.channel.ConnectTimeoutException: connection timed out: saj-test-westus2.documents.azure.com/obfuscated.ip.address.01:10914",
+        "exceptionResponseHeaders": "{x-ms-activity-id=1489cad3-452e-11ed-83f3-ad0772752220}",
+        "transportRequestTimeline": [
+          {
+            "eventName": "created",
+            "startTimeUTC": "2022-10-06T04:19:33.974Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "queued",
+            "startTimeUTC": "2022-10-06T04:19:33.974Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "channelAcquisitionStarted",
+            "startTimeUTC": "2022-10-06T04:19:33.974Z",
+            "durationInMilliSecs": 601
+          },
+          {
+            "eventName": "pipelined",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "transitTime",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "decodeTime",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "received",
+            "startTimeUTC": null,
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "completed",
+            "startTimeUTC": "2022-10-06T04:19:34.575Z",
+            "durationInMilliSecs": 0
+          }
+        ],
+        "rntbdRequestLengthInBytes": -1,
+        "rntbdResponseLengthInBytes": -1,
+        "requestPayloadLengthInBytes": 259,
+        "responsePayloadLengthInBytes": -1,
+        "channelTaskQueueSize": 0,
+        "pendingRequestsCount": 0,
+        "serviceEndpointStatistics": {
+          "availableChannels": 0,
+          "acquiredChannels": 0,
+          "executorTaskQueueSize": 0,
+          "inflightRequests": 1,
+          "lastSuccessfulRequestTime": "2022-10-06T04:08:23.138Z",
+          "lastRequestTime": "2022-10-06T04:17:51.753Z",
+          "createdTime": "2022-10-06T03:23:58.680Z",
+          "isClosed": false,
+          "cerMetrics": {
+            "lastCallTimestamp": "2022-10-06T04:19:34.575Z",
+            "lastActionableContext": "(2022-10-06T04:19:34.575Z,1)"
+          }
+        }
+      },
+      "requestResponseTimeUTC": "2022-10-06T04:19:34.575Z",
+      "requestResourceType": "Document",
+      "requestOperationType": "Query",
+      "requestSessionToken": "111:5#44143434#2=45097356#7=62713334#8=17610233"
+    },
+    {
+      "storeResult": {
+        "storePhysicalAddress": "rntbd://saj-test-westus2.documents.azure.com:10764/apps/01a6ca6a-50c5-4317-8a3f-60781c449887/services/8c9e3059-a835-4240-9588-0bced83499ba/partitions/20153b0d-f38e-4ffd-b103-7307a8f0bd10/replicas/133029746079454466s/",
+        "lsn": 17610361,
+        "globalCommittedLsn": 44143533,
+        "partitionKeyRangeId": "111",
+        "isValid": true,
+        "statusCode": 200,
+        "subStatusCode": 0,
+        "isGone": false,
+        "isNotFound": false,
+        "isInvalidPartition": false,
+        "isThroughputControlRequestRateTooLarge": false,
+        "requestCharge": 17.87,
+        "itemLSN": -1,
+        "sessionToken": "111:5#44143534#2=45097497#7=62713334#8=17610343",
+        "backendLatencyInMs": 12.986,
+        "transportRequestTimeline": [
+          {
+            "eventName": "created",
+            "startTimeUTC": "2022-10-06T04:19:34.575Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "queued",
+            "startTimeUTC": "2022-10-06T04:19:34.575Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "channelAcquisitionStarted",
+            "startTimeUTC": "2022-10-06T04:19:34.575Z",
+            "durationInMilliSecs": 12
+          },
+          {
+            "eventName": "pipelined",
+            "startTimeUTC": "2022-10-06T04:19:34.587Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "transitTime",
+            "startTimeUTC": "2022-10-06T04:19:34.587Z",
+            "durationInMilliSecs": 14
+          },
+          {
+            "eventName": "decodeTime",
+            "startTimeUTC": "2022-10-06T04:19:34.601Z",
+            "durationInMilliSecs": 1
+          },
+          {
+            "eventName": "received",
+            "startTimeUTC": "2022-10-06T04:19:34.602Z",
+            "durationInMilliSecs": 0
+          },
+          {
+            "eventName": "completed",
+            "startTimeUTC": "2022-10-06T04:19:34.602Z",
+            "durationInMilliSecs": 0
+          }
+        ],
+        "rntbdRequestLengthInBytes": 789,
+        "rntbdResponseLengthInBytes": 95598,
+        "requestPayloadLengthInBytes": 259,
+        "responsePayloadLengthInBytes": 94594,
+        "channelTaskQueueSize": 1,
+        "pendingRequestsCount": 0,
+        "serviceEndpointStatistics": {
+          "availableChannels": 0,
+          "acquiredChannels": 0,
+          "executorTaskQueueSize": 0,
+          "inflightRequests": 1,
+          "lastSuccessfulRequestTime": "2022-10-06T04:17:52.373Z",
+          "lastRequestTime": "2022-10-06T04:17:52.354Z",
+          "createdTime": "2022-10-06T03:30:08.061Z",
+          "isClosed": false,
+          "cerMetrics": {
+            "lastCallTimestamp": "2022-10-06T04:18:52.383Z"
+          }
+        }
+      },
+      "requestResponseTimeUTC": "2022-10-06T04:19:34.602Z",
+      "requestResourceType": "Document",
+      "requestOperationType": "Query",
+      "requestSessionToken": "111:5#44143434#2=45097356#7=62713334#8=17610233"
+    }
+  ],
+  "supplementalResponseStatisticsList": [],
+  "addressResolutionStatistics": {
+    "154552a9-452e-11ed-83f3-ad0772752220": {
+      "startTimeUTC": "2022-10-06T04:19:34.603Z",
+      "endTimeUTC": "2022-10-06T04:19:34.604Z",
+      "targetEndpoint": "https://saj-test-westus2.documents.azure.com:443/addresses/?$resolveFor=dbs%2F9hhNAA%3D%3D%2Fcolls%2F9hhNAMV6%2BiY%3D%2Fdocs&$filter=protocol%20eq%20rntbd&$partitionKeyRangeIds=111",
+      "exceptionMessage": null,
+      "forceRefresh": false,
+      "forceCollectionRoutingMapRefresh": false,
+      "inflightRequest": false
+    }
+  },
+  "regionsContacted": [
+    "west us 2"
+  ],
+  "retryContext": {
+    "statusAndSubStatusCodes": null,
+    "retryLatency": 0,
+    "retryCount": 0
+  },
+  "metadataDiagnosticsContext": {
+    "metadataDiagnosticList": [
+      {
+        "metaDataName": "SERVER_ADDRESS_LOOKUP",
+        "startTimeUTC": "2022-10-06T04:19:34.603Z",
+        "endTimeUTC": "2022-10-06T04:19:34.604Z",
+        "durationinMS": 1
+      }
+    ]
+  },
+  "serializationDiagnosticsContext": {
+    "serializationDiagnosticsList": null
+  },
+  "gatewayStatistics": null,
+  "systemInformation": {
+    "usedMemory": "309262 KB",
+    "availableMemory": "1427442 KB",
+    "systemCpuLoad": "(2022-10-06T04:19:09.279Z 0.7%), (2022-10-06T04:19:14.279Z 1.3%), (2022-10-06T04:19:19.279Z 0.9%), (2022-10-06T04:19:24.279Z 0.8%), (2022-10-06T04:19:29.279Z 1.0%), (2022-10-06T04:19:34.279Z 1.1%)",
+    "availableProcessors": 4
+  },
+  "clientCfgs": {
+    "id": 1,
+    "machineId": "vmId:bc8ad1a5-934e-471e-ba7d-03a6e97c94b9",
+    "connectionMode": "DIRECT",
+    "numberOfClients": 2,
+    "connCfg": {
+      "rntbd": "(cto:PT0.6S, nrto:PT5S, icto:PT1M, ieto:PT1H, mcpe:1000, mrpc:30, cer:true)",
+      "gw": "(cps:1000, nrto:PT1M, icto:PT1M, p:false)",
+      "other": "(ed: true, cs: false)"
+    },
+    "consistencyCfg": "(consistency: Session, mm: true, prgns: [westus2,southcentralus,eastus2])"
+  }
+}

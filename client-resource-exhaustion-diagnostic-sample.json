@@ -1,0 +1,125 @@
+{
+	"userAgent": "azsdk-java-cosmos/4.12.0 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-EastUS2",
+	"requestLatencyInMs": 12011,
+	"requestStartTimeUTC": "2021-09-27T06:47:16.930943Z",
+	"requestEndTimeUTC": "2021-09-27T06:47:28.942758Z",
+	"responseStatisticsList": [
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-eastus2.documents.azure.com:34969/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132762338970282805s/",
+				"lsn": 603602559,
+				"globalCommittedLsn": 603601819,
+				"partitionKeyRangeId": "126",
+				"isValid": true,
+				"statusCode": 200,
+				"subStatusCode": 0,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 4.76,
+				"itemLSN": 603602351,
+				"sessionToken": "4#603601823#2=-1#5=-1",
+				"backendLatencyInMs": 0.327,
+				"exception": null,
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-09-27T06:47:18.915338Z",
+						"durationInMicroSec": 6
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-09-27T06:47:18.915344Z",
+						"durationInMicroSec": 2
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-09-27T06:47:18.915346Z",
+						"durationInMicroSec": 6589696
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-09-27T06:47:25.505042Z",
+						"durationInMicroSec": 2708541
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-09-27T06:47:28.213583Z",
+						"durationInMicroSec": 729092
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-09-27T06:47:28.942675Z",
+						"durationInMicroSec": 59
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-09-27T06:47:28.942734Z",
+						"durationInMicroSec": 1
+					}
+				],
+				"rntbdRequestLengthInBytes": 523,
+				"rntbdResponseLengthInBytes": 34599,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": 34100,
+				"channelTaskQueueSize": 214,
+				"pendingRequestsCount": 0,
+				"serviceEndpointStatistics": {
+					"availableChannels": 0,
+					"acquiredChannels": 10,
+					"executorTaskQueueSize": 112,
+					"inflightRequests": 41,
+					"lastSuccessfulRequestTime": "2021-09-27T06:47:18.901Z",
+					"lastRequestTime": "2021-09-27T06:47:16.545Z",
+					"createdTime": "2021-09-27T06:46:24.940918Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-09-27T06:47:28.942758Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		}
+	],
+	"supplementalResponseStatisticsList": [],
+	"addressResolutionStatistics": {},
+	"regionsContacted": [
+		"https://saj-diagnostics-test-eastus2.documents.azure.com:443/"
+	],
+	"retryContext": {
+		"statusAndSubStatusCodes": null,
+		"retryLatency": 0,
+		"retryCount": 0
+	},
+	"metadataDiagnosticsContext": {
+		"metadataDiagnosticList": null
+	},
+	"serializationDiagnosticsContext": {
+		"serializationDiagnosticsList": [
+			{
+				"serializationType": "ITEM_DESERIALIZATION",
+				"startTimeUTC": "2021-09-27T06:47:28.945904Z",
+				"endTimeUTC": "2021-09-27T06:47:28.946083Z",
+				"durationInMicroSec": 179
+			}
+		]
+	},
+	"gatewayStatistics": null,
+	"systemInformation": {
+		"usedMemory": "2066747 KB",
+		"availableMemory": "30405 KB",
+		"systemCpuLoad": "(2021-09-27T06:47:02.565970Z 100.0%), (2021-09-27T06:47:08.294710Z 100.0%), (2021-09-27T06:47:12.636784Z 100.0%), (2021-09-27T06:47:17.565168Z 100.0%), (2021-09-27T06:47:22.595797Z 100.0%), (2021-09-27T06:47:27.711168Z 100.0%)",
+		"availableProcessors": 8
+	},
+	"clientCfgs": {
+		"id": 0,
+		"connectionMode": "DIRECT",
+		"numberOfClients": 1,
+		"connCfg": {
+			"rntbd": "(cto:PT0S, rto:PT5S, icto:PT0S, ieto:PT1H, mcpe:130, mrpc:30, cer:false)",
+			"gw": "(cps:1000, rto:PT5S, icto:null, p:false)",
+			"other": "(ed: true, cs: false)"
+		},
+		"consistencyCfg": "(consistency: Session, mm: true, prgns: [eastus2,southcentralus,westus])"
+	}
+}

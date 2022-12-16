@@ -1,0 +1,69 @@
+{
+	"userAgent": "azsdk-java-cosmos/4.12.0 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-WestUS",
+	"requestLatencyInMs": 4,
+	"requestStartTimeUTC": "01 Oct 2021 05:59:59.990",
+	"requestEndTimeUTC": "01 Oct 2021 05:59:59.994""responseStatisticsList": [
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus.documents.azure.com:6374/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132424215103270464p/",
+				"lsn": 178917785,
+				"globalCommittedLsn": 178915295,
+				"partitionKeyRangeId": "515",
+				"isValid": true,
+				"statusCode": 404,
+				"subStatusCode": 0,
+				"isGone": false,
+				"isNotFound": true,
+				"isInvalidPartition": false,
+				"requestCharge": 1.67,
+				"itemLSN": -1,
+				"sessionToken": "23#178917785#2=45361102#7=187509098",
+				"exception": "[\"Resource Not Found. Learn more: https://aka.ms/cosmosdb-tsg-not-found\"]",
+				"transportRequestTimeline": null
+			},
+			"requestResponseTimeUTC": "01 Oct 2021 05:59:59.994",
+			"requestResourceType": "Document",
+			"requestOperationType": "Replace"
+		}
+	],
+	"supplementalResponseStatisticsList": [],
+	"addressResolutionStatistics": {},
+	"regionsContacted": [
+		"https://saj-diagnostics-test-westus.documents.azure.com:443/"
+	],
+	"retryContext": {
+		"retryCount": 0,
+		"statusAndSubStatusCodes": null,
+		"retryLatency": 0
+	},
+	"metadataDiagnosticsContext": {
+		"metadataDiagnosticList": null
+	},
+	"serializationDiagnosticsContext": {
+		"serializationDiagnosticsList": [
+			{
+				"serializationType": "ITEM_SERIALIZATION",
+				"startTimeUTC": "01 Oct 2021 05:59:59.990",
+				"endTimeUTC": "01 Oct 2021 05:59:59.990",
+				"durationInMicroSec": 0
+			}
+		]
+	},
+	"gatewayStatistics": null,
+	"systemInformation": {
+		"usedMemory": "1344810 KB",
+		"availableMemory": "2718422 KB",
+		"systemCpuLoad": "(2021-10-01T05:59:30.723Z 51.9%), (2021-10-01T05:59:35.723Z 52.3%), (2021-10-01T05:59:40.723Z 50.4%), (2021-10-01T05:59:45.723Z 50.5%), (2021-10-01T05:59:50.723Z 54.4%), (2021-10-01T05:59:55.723Z 58.0%)"
+	},
+	"clientCfgs": {
+		"id": 0,
+		"connectionMode": "DIRECT",
+		"numberOfClients": 3,
+		"connCfg": {
+			"rntbd": "(cto:PT0.6S, rto:PT5S, icto:PT0S, ieto:PT25H, mcpe:350, mrpc:30, cer:true)",
+			"gw": "(cps:1150, rto:PT5S, icto:PT1M, p:false)",
+			"other": "(ed: false, cs: false)"
+		},
+		"consistencyCfg": "(consistency: Eventual, mm: false, prgns: [])"
+	}
+}

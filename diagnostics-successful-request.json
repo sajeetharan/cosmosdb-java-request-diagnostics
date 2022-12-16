@@ -1,0 +1,117 @@
+{
+	"userAgent": "azsdk-java-cosmos/4.12.0 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-WestUS2",
+	"requestLatencyInMs": 110,
+	"requestStartTimeUTC": "2021-08-21T14:36:11.777642Z",
+	"requestEndTimeUTC": "2021-08-21T14:36:11.888622Z",
+	"responseStatisticsList": [
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://cdb-ms-prod-westus2-fd30.documents.azure.com:14008/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132705048088649043s/",
+				"lsn": 1064367,
+				"globalCommittedLsn": 1064366,
+				"partitionKeyRangeId": "280",
+				"isValid": true,
+				"statusCode": 200,
+				"subStatusCode": 0,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 1.05,
+				"itemLSN": 38111,
+				"sessionToken": "-1#1064367",
+				"exception": null,
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-08-21T14:36:11.777790Z",
+						"durationInMicroSec": 3
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-08-21T14:36:11.777793Z",
+						"durationInMicroSec": 1
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-08-21T14:36:11.777794Z",
+						"durationInMicroSec": 109093
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-08-21T14:36:11.886887Z",
+						"durationInMicroSec": 178
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-08-21T14:36:11.887065Z",
+						"durationInMicroSec": 1472
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-08-21T14:36:11.888537Z",
+						"durationInMicroSec": 43
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-08-21T14:36:11.888580Z",
+						"durationInMicroSec": 1
+					}
+				],
+				"rntbdRequestLengthInBytes": 459,
+				"rntbdResponseLengthInBytes": 2501,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": 2009,
+				"channelTaskQueueSize": 1,
+				"pendingRequestsCount": 0,
+				"serviceEndpointStatistics": {
+					"availableChannels": 0,
+					"acquiredChannels": 0,
+					"executorTaskQueueSize": 0,
+					"inflightRequests": 1,
+					"lastSuccessfulRequestTime": "2021-08-21T14:08:08.220Z",
+					"lastRequestTime": "2021-08-21T14:09:38.580Z",
+					"createdTime": "2021-08-16T23:16:43.268749Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-08-21T14:36:11.888622Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		}
+	],
+	"supplementalResponseStatisticsList": [],
+	"addressResolutionStatistics": {},
+	"regionsContacted": [
+		"https://saj-diagnostics-test-westus2.documents.azure.com:443/"
+	],
+	"retryContext": {
+		"statusAndSubStatusCodes": null,
+		"retryCount": 0,
+		"retryLatency": 0
+	},
+	"metadataDiagnosticsContext": {
+		"metadataDiagnosticList": null
+	},
+	"serializationDiagnosticsContext": {
+		"serializationDiagnosticsList": null
+	},
+	"gatewayStatistics": null,
+	"systemInformation": {
+		"usedMemory": "10303666 KB",
+		"availableMemory": "10667854 KB",
+		"systemCpuLoad": "(2021-08-21T14:35:41.893580Z 5.8%), (2021-08-21T14:35:46.893540Z 6.6%), (2021-08-21T14:35:51.893552Z 6.2%), (2021-08-21T14:35:56.893554Z 6.0%), (2021-08-21T14:36:01.893540Z 6.0%), (2021-08-21T14:36:06.893616Z 6.6%)",
+		"availableProcessors": 16
+	},
+	"clientCfgs": {
+		"id": 0,
+		"connectionMode": "DIRECT",
+		"numberOfClients": 1,
+		"connCfg": {
+			"rntbd": "(cto:PT0.6S, rto:PT5S, icto:PT0S, ieto:PT25H, mcpe:350, mrpc:30, cer:true)",
+			"gw": "(cps:1150, rto:PT5S, icto:PT1M, p:false)",
+			"other": "(ed: false, cs: false)"
+		},
+		"consistencyCfg": "(consistency: Eventual, mm: false, prgns: [])"
+	}
+}

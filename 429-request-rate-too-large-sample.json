@@ -1,0 +1,359 @@
+{
+	"userAgent": "azsdk-java-cosmos/4.19.1 Linux/3.10.0-1062.12.1.el7.x86_64 JRE/1.8.0_152 sajVM1-WestUS2",
+	"requestLatencyInMs": 2038,
+	"requestStartTimeUTC": "2021-08-30T23:36:54.165909Z",
+	"requestEndTimeUTC": "2021-08-30T23:36:56.204114Z",
+	"responseStatisticsList": [
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus2-fd38.documents.azure.com:14464/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132748338055824403p/",
+				"lsn": 2,
+				"globalCommittedLsn": 2,
+				"partitionKeyRangeId": "",
+				"isValid": true,
+				"statusCode": 429,
+				"subStatusCode": 3200,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 0.38,
+				"itemLSN": -1,
+				"sessionToken": null,
+				"backendLatencyInMs": null,
+				"exception": "[\"Request rate is large. More Request Units may be needed, so no changes were made. Please retry this request later. Learn more: http://aka.ms/cosmosdb-error-429\"]",
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-08-30T23:36:54.166396Z",
+						"durationInMicroSec": 17
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-08-30T23:36:54.166413Z",
+						"durationInMicroSec": 1
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-08-30T23:36:54.166414Z",
+						"durationInMicroSec": 456581
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-08-30T23:36:54.622995Z",
+						"durationInMicroSec": 13101
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-08-30T23:36:54.636096Z",
+						"durationInMicroSec": 13991
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-08-30T23:36:54.650087Z",
+						"durationInMicroSec": 329
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-08-30T23:36:54.650416Z",
+						"durationInMicroSec": 130
+					}
+				],
+				"rntbdRequestLengthInBytes": 484,
+				"rntbdResponseLengthInBytes": 329,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": null,
+				"channelTaskQueueSize": 2,
+				"pendingRequestsCount": 2,
+				"serviceEndpointStatistics": {
+					"availableChannels": 0,
+					"acquiredChannels": 5,
+					"executorTaskQueueSize": 0,
+					"inflightRequests": 14,
+					"lastSuccessfulRequestTime": "2021-08-30T23:36:54.137Z",
+					"lastRequestTime": "2021-08-30T23:36:54.164Z",
+					"createdTime": "2021-08-30T23:36:53.407618Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-08-30T23:36:54.650620Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		},
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus2-fd38.documents.azure.com:14125/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132748338099418917s/",
+				"lsn": 2,
+				"globalCommittedLsn": 2,
+				"partitionKeyRangeId": "",
+				"isValid": true,
+				"statusCode": 429,
+				"subStatusCode": 3200,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 0.38,
+				"itemLSN": -1,
+				"sessionToken": null,
+				"backendLatencyInMs": null,
+				"exception": "[\"Request rate is large. More Request Units may be needed, so no changes were made. Please retry this request later. Learn more: http://aka.ms/cosmosdb-error-429\"]",
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-08-30T23:36:55.152617Z",
+						"durationInMicroSec": 18
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-08-30T23:36:55.152635Z",
+						"durationInMicroSec": 1
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-08-30T23:36:55.152636Z",
+						"durationInMicroSec": 91
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-08-30T23:36:55.152727Z",
+						"durationInMicroSec": 2144
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-08-30T23:36:55.154871Z",
+						"durationInMicroSec": 9401
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-08-30T23:36:55.164272Z",
+						"durationInMicroSec": 404
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-08-30T23:36:55.164676Z",
+						"durationInMicroSec": 116
+					}
+				],
+				"rntbdRequestLengthInBytes": 482,
+				"rntbdResponseLengthInBytes": 293,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": null,
+				"channelTaskQueueSize": 0,
+				"pendingRequestsCount": 0,
+				"serviceEndpointStatistics": {
+					"availableChannels": 8,
+					"acquiredChannels": 2,
+					"executorTaskQueueSize": 0,
+					"inflightRequests": 9,
+					"lastSuccessfulRequestTime": "2021-08-30T23:36:55.064Z",
+					"lastRequestTime": "2021-08-30T23:36:55.149Z",
+					"createdTime": "2021-08-30T23:36:53.347126Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-08-30T23:36:55.164831Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		},
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus2-fd38.documents.azure.com:14464/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132748338055824403p/",
+				"lsn": 2,
+				"globalCommittedLsn": 2,
+				"partitionKeyRangeId": "",
+				"isValid": true,
+				"statusCode": 429,
+				"subStatusCode": 3200,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 0.38,
+				"itemLSN": -1,
+				"sessionToken": null,
+				"backendLatencyInMs": null,
+				"exception": "[\"Request rate is large. More Request Units may be needed, so no changes were made. Please retry this request later. Learn more: http://aka.ms/cosmosdb-error-429\"]",
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-08-30T23:36:55.666286Z",
+						"durationInMicroSec": 11
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-08-30T23:36:55.666297Z",
+						"durationInMicroSec": 1
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-08-30T23:36:55.666298Z",
+						"durationInMicroSec": 54
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-08-30T23:36:55.666352Z",
+						"durationInMicroSec": 311
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-08-30T23:36:55.666663Z",
+						"durationInMicroSec": 9391
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-08-30T23:36:55.676054Z",
+						"durationInMicroSec": 167
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-08-30T23:36:55.676221Z",
+						"durationInMicroSec": 46
+					}
+				],
+				"rntbdRequestLengthInBytes": 482,
+				"rntbdResponseLengthInBytes": 329,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": null,
+				"channelTaskQueueSize": 0,
+				"pendingRequestsCount": 0,
+				"serviceEndpointStatistics": {
+					"availableChannels": 12,
+					"acquiredChannels": 3,
+					"executorTaskQueueSize": 0,
+					"inflightRequests": 9,
+					"lastSuccessfulRequestTime": "2021-08-30T23:36:55.650Z",
+					"lastRequestTime": "2021-08-30T23:36:55.665Z",
+					"createdTime": "2021-08-30T23:36:53.407618Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-08-30T23:36:55.676282Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		},
+		{
+			"storeResult": {
+				"storePhysicalAddress": "rntbd://saj-diagnostics-test-westus2-fd38.documents.azure.com:14371/apps/9a76d595-e615-4913-8519-87a2347d9613/services/df06bf86-4096-45e9-8640-9b455f58e42d/partitions/ea291856-8f74-4f09-bcce-550928fe997b/replicas/132748338099418918s/",
+				"lsn": 2,
+				"globalCommittedLsn": 2,
+				"partitionKeyRangeId": "0",
+				"isValid": true,
+				"statusCode": 200,
+				"subStatusCode": 0,
+				"isGone": false,
+				"isNotFound": false,
+				"isInvalidPartition": false,
+				"isThroughputControlRequestRateTooLarge": false,
+				"requestCharge": 1.33,
+				"itemLSN": 2,
+				"sessionToken": "0#2#6=-1",
+				"backendLatencyInMs": 0.267,
+				"exception": null,
+				"transportRequestTimeline": [
+					{
+						"eventName": "created",
+						"startTimeUTC": "2021-08-30T23:36:56.177411Z",
+						"durationInMicroSec": 12
+					},
+					{
+						"eventName": "queued",
+						"startTimeUTC": "2021-08-30T23:36:56.177423Z",
+						"durationInMicroSec": 1
+					},
+					{
+						"eventName": "channelAcquisitionStarted",
+						"startTimeUTC": "2021-08-30T23:36:56.177424Z",
+						"durationInMicroSec": 142
+					},
+					{
+						"eventName": "pipelined",
+						"startTimeUTC": "2021-08-30T23:36:56.177566Z",
+						"durationInMicroSec": 4410
+					},
+					{
+						"eventName": "transitTime",
+						"startTimeUTC": "2021-08-30T23:36:56.181976Z",
+						"durationInMicroSec": 22076
+					},
+					{
+						"eventName": "received",
+						"startTimeUTC": "2021-08-30T23:36:56.204052Z",
+						"durationInMicroSec": 47
+					},
+					{
+						"eventName": "completed",
+						"startTimeUTC": "2021-08-30T23:36:56.204099Z",
+						"durationInMicroSec": 1
+					}
+				],
+				"rntbdRequestLengthInBytes": 482,
+				"rntbdResponseLengthInBytes": 6258,
+				"requestPayloadLengthInBytes": 0,
+				"responsePayloadLengthInBytes": 5806,
+				"channelTaskQueueSize": 0,
+				"pendingRequestsCount": 0,
+				"serviceEndpointStatistics": {
+					"availableChannels": 17,
+					"acquiredChannels": 3,
+					"executorTaskQueueSize": 0,
+					"inflightRequests": 12,
+					"lastSuccessfulRequestTime": "2021-08-30T23:36:56.152Z",
+					"lastRequestTime": "2021-08-30T23:36:56.175Z",
+					"createdTime": "2021-08-30T23:36:53.406421Z",
+					"isClosed": false
+				}
+			},
+			"requestResponseTimeUTC": "2021-08-30T23:36:56.204114Z",
+			"requestResourceType": "Document",
+			"requestOperationType": "Read"
+		}
+	],
+	"supplementalResponseStatisticsList": [],
+	"addressResolutionStatistics": {},
+	"regionsContacted": [
+		"https://saj-diagnostics-test-westus2.documents.azure.com:443/"
+	],
+	"retryContext": {
+		"statusAndSubStatusCodes": [
+			[
+				429,
+				3200
+			],
+			[
+				429,
+				3200
+			],
+			[
+				429,
+				3200
+			]
+		],
+		"retryCount": 3,
+		"retryLatency": 1553
+	},
+	"metadataDiagnosticsContext": {
+		"metadataDiagnosticList": null
+	},
+	"serializationDiagnosticsContext": {
+		"serializationDiagnosticsList": null
+	},
+	"gatewayStatistics": null,
+	"systemInformation": {
+		"usedMemory": "116982 KB",
+		"availableMemory": "4077322 KB",
+		"systemCpuLoad": "empty",
+		"availableProcessors": 12
+	},
+	"clientCfgs": {
+		"id": 0,
+		"connectionMode": "DIRECT",
+		"numberOfClients": 1,
+		"connCfg": {
+			"rntbd": "(cto:PT5S, rto:PT5S, icto:PT0S, ieto:PT1H, mcpe:130, mrpc:30, cer:false)",
+			"gw": "(cps:1000, rto:PT5S, icto:null, p:false)",
+			"other": "(ed: true, cs: false)"
+		},
+		"consistencyCfg": "(consistency: null, mm: true, prgns: [])"
+	}
+}
